@@ -1,28 +1,84 @@
 <!doctype html><html><head><link rel="icon" href="/fumika/favicon.png"></head><head><meta charset="utf-8"/><title>fumika</title><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"/><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Mono:wght@400;500;700&family=Trocchi&display=swap" rel="stylesheet"><style>.test {
             position: absolute;
-            left: 10vw;
-            top: 10vw;
-            width: 20vw;
+            width: 100%;
             height: 20vw;
-            background-color: aquamarine;
-        }
-        
-        button {
+            /* background-color: aquamarine; */
             display: block;
-            background-color: white;
-            color: mediumpurple;
-            border: 2px solid mediumpurple;
-            font-size: 16px;
-            margin: 4px auto;
-            transition-duration: 0.4s;
-            padding: 16px 32px;
-            text-align: center;
         }
         
-        button:hover {
-            background-color: mediumpurple;
-            color: white;
-        }</style><body onload="start()"><script src="/fumika/main.d39e7a3c7ce3347a9bdd.js"></script></body><script>function start() {
+        #button {
+            display: block;
+            /* background-color: white; */
+            background-color: transparent;
+            color: mediumpurple;
+            border: none;
+            /* border: 2px solid mediumpurple; */
+            font-size: 54px;
+            margin: 7vh auto;
+            width: 10%;
+            transition-duration: 0.4s;
+            /* padding: 16px 32px; */
+            text-align: center;
+            -webkit-animation: flickerAnimation 1s;
+            -moz-animation: flickerAnimation 1s;
+            -o-animation: flickerAnimation 1s;
+            animation: flickerAnimation 1s;
+            animation-iteration-count: 3;
+        }
+        
+        #button:hover {
+            /* background-color: mediumpurple; */
+            text-shadow: 0px 0px 20px mediumpurple, 0px 0px 20px mediumpurple, 0px 0px 10px mediumpurple;
+            color: pink;
+        }
+        
+        @keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }</style><body onload="start()"><div class="test"><button id="button">&#9829;</button></div><script src="/fumika/main.a9c91ec898b194eb0234.js"></script></body><script>function start() {
             // setTimeout(type, 1000);
         }
 
