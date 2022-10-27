@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Mono:wght@400;500;700&family=Trocchi&display=swap" rel="stylesheet">
+    <style>
+        .test {
+            position: absolute;
+            left: 10vw;
+            top: 10vw;
+            width: 20vw;
+            height: 20vw;
+            background-color: aquamarine;
+        }
+        
+        button {
+            display: block;
+            background-color: white;
+            color: mediumpurple;
+            border: 2px solid mediumpurple;
+            font-size: 16px;
+            margin: 4px auto;
+            transition-duration: 0.4s;
+            padding: 16px 32px;
+            text-align: center;
+        }
+        
+        button:hover {
+            background-color: mediumpurple;
+            color: white;
+        }
+    </style>
+
+    <body onload="start()">
+
+        <!-- <div class="test">
+        <button id="button">click</button>
+    </div> -->
+    </body>
+
+    <script>
+        function start() {
+            // setTimeout(type, 1000);
+        }
+
+        function closeWindow() {
+            console.log("closing");
+            document.getElementById("intro").style.display = "none";
+        }
+
+        function type() {
+            messages = [
+                "...",
+                "...",
+            ];
+
+            var typed = new Typed('.typed', {
+                strings: messages,
+                // 25 is good
+                typeSpeed: 100,
+                showCursor: false,
+                cursorChar: '|',
+                autoInsertCss: true,
+            });
+        }
+    </script>
+
+</html>
